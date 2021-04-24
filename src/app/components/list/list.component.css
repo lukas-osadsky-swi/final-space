@@ -1,0 +1,13 @@
+.image-size {
+	width: 100px;
+	height: 100px;
+}
+
+.paginator:hover {
+cursor: pointer;
+}
+
+.text-title {
+	font-size: large;
+	font-weight: bold;
+}
