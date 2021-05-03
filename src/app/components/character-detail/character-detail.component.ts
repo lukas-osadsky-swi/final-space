@@ -18,10 +18,9 @@ export class CharacterDetailComponent implements OnInit {
 	ngOnInit() {
 		let characterId = this.route.snapshot.params["id"];
 		this.dataService.getCharacter(characterId).subscribe(data => {
-			this.character = data
+			this.character = data;
 			console.log(this.character);
-		}
-		)
+		});
 	}
 
 }

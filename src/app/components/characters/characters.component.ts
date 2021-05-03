@@ -23,7 +23,6 @@ export class CharactersComponent implements OnInit {
 		this.apiService.getCharacters().subscribe(data => {
 			console.log(data);
 			this.characters = data;
-
 		})
 	}
 }
