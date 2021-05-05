@@ -1,5 +1,5 @@
-<div *ngIf="data" class="p-3">
-	<div *ngFor="let item of pagedData" class="card card-body mb-3">
+<div *ngIf="data" class="card card-body m-3 list-color">
+	<div *ngFor="let item of pagedData" class="card card-body mb-3 clickable">
 		<div class="d-flex justify-content-between" (click)="goToDetail(item.id)">
 			<div class="text-title">
 				{{item.name}}

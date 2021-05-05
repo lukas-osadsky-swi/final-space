@@ -1,0 +1,17 @@
+<div *ngIf="location" class="card card-body m-3">
+    <div class="d-flex justify-content-between">
+        <div>
+            <div class="font-weight-bold">{{location.name}}</div>
+            <div>Type: {{location.type }}</div>
+            <div>Inhabitants:
+                <li *ngFor="let inhabitant of location.inhabitants">{{inhabitant}}</li>
+            </div>
+            <div>Notable residents:
+                <li *ngFor="let resident of residents">
+                    <span class="clickable">{{resident.name}}</span>
+                </li>
+            </div>
+        </div>
+        <img class="image-size"src="{{location.img_url}}">
+    </div>
+</div>

@@ -23,22 +23,18 @@ export class ApiService {
 
 	public getEpisodes() {
 		return this.get('episode/');
-
 	}
 
 	public getEpisode(episodeId: number) {
 		return this.get('episode/' + episodeId);
-
 	}
 
 	public getLocations() {
 		return this.get('location/');
-
 	}
 
 	public getLocation(locationId: number) {
 		return this.get('location/' + locationId);
-
 	}
 
 	public get(route: string, data?: any): Observable<any> {

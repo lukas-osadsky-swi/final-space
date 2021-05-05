@@ -9,7 +9,7 @@ import { ApiService } from 'src/app/services/api.service';
 	styleUrls: ['./character-detail.component.css']
 })
 export class CharacterDetailComponent implements OnInit {
-	character: Character;
+	public character: Character;
 
 	constructor(
 		private readonly dataService: ApiService,
@@ -17,10 +17,8 @@ export class CharacterDetailComponent implements OnInit {
 
 	ngOnInit() {
 		let characterId = this.route.snapshot.params["id"];
-		this.dataService.getCharacter(characterId).subscribe(data => {
-			this.character = data;
-			console.log(this.character);
+		this.dataService.getCharacter(characterId).subscribe(character => {
+			this.character = character;
 		});
 	}
-
 }

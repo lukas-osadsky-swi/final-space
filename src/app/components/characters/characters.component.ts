@@ -20,9 +20,8 @@ export class CharactersComponent implements OnInit {
 	constructor(private readonly apiService: ApiService) { }
 
 	ngOnInit() {
-		this.apiService.getCharacters().subscribe(data => {
-			console.log(data);
-			this.characters = data;
+		this.apiService.getCharacters().subscribe(characters => {
+			this.characters = characters;
 		})
 	}
 }

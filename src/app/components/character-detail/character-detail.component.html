@@ -1,17 +1,17 @@
-<div class="card card-body m-3">
+<div *ngIf="character" class="card card-body m-3">
     <div class="d-flex justify-content-between">
         <div>
-            <div>{{character.name}}</div>
+            <div class="font-weight-bold">{{character.name}}</div>
             <div>Status: {{character.status }}</div>
             <div>Specie: {{character.species }}</div>
             <div>Gender: {{character.gender }}</div>
             <div>Hair: {{character.hair }}</div>
             <div>Origin: {{character.origin }}</div>
             <div>Aliases:
-                <li *ngFor="let val of character.alias">{{val}}</li>
+                <li *ngFor="let alias of character.alias">{{alias}}</li>
             </div>
             <div>Abilities:
-                <li *ngFor="let val of character.abilities">{{val}}</li>
+                <li *ngFor="let ability of character.abilities">{{ability}}</li>
             </div>
         </div>
         <img class="image-size"src="{{character.img_url}}">

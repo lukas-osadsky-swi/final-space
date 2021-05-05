@@ -11,6 +11,9 @@ import { EpisodesComponent } from './components/episodes/episodes.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CharacterDetailComponent } from './components/character-detail/character-detail.component';
+import { EpisodeDetailComponent } from './components/episode-detail/episode-detail.component';
+import { LocationsComponent } from './components/locations/locations.component';
+import { LocationDetailComponent } from './components/location-detail/location-detail.component';
 
 @NgModule({
 	declarations: [
@@ -21,6 +24,9 @@ import { CharacterDetailComponent } from './components/character-detail/characte
 		HomeComponent,
 		PageNotFoundComponent,
 		CharacterDetailComponent,
+		EpisodeDetailComponent,
+		LocationsComponent,
+		LocationDetailComponent,
 	],
 	imports: [
 		BrowserModule,

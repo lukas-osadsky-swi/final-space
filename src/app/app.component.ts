@@ -22,4 +22,8 @@ export class AppComponent {
 	public episodes(): void {
 		this.router.navigate(['/episodes']);
 	}
+
+	public locations(): void {
+		this.router.navigate(['/locations']);
+	}
 }

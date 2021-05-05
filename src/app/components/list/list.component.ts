@@ -11,7 +11,7 @@ enum ListDataType {
 @Component({
 	selector: 'app-list',
 	templateUrl: './list.component.html',
-	styleUrls: ['./list.component.css']
+	styleUrls: ['./list.component.css', './../../app.component.css']
 })
 export class ListComponent implements OnChanges {
 	@Input() data: any[];
@@ -36,13 +36,10 @@ export class ListComponent implements OnChanges {
 		}
 
 		// get pager object from service
-		console.log(this.data.length);
 		this.pager = this.paginator.getPager(this.data.length, page);
-		console.log(this.pager);
 
 		// get current page of items
 		this.pagedData = this.data.slice(this.pager.startIndex, this.pager.endIndex + 1);
-		console.log(this.pagedData);
 	}
 
 	public goToDetail(id: number) {

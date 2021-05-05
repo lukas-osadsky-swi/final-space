@@ -20,9 +20,8 @@ export class EpisodesComponent implements OnInit {
   constructor(private readonly apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService.getEpisodes().subscribe(data => {
-			console.log(data);
-			this.episodes = data;
+    this.apiService.getEpisodes().subscribe(episode => {
+			this.episodes = episode;
     });
   }
 }

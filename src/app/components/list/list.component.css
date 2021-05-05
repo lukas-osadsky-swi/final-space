@@ -11,3 +11,7 @@ cursor: pointer;
 	font-size: large;
 	font-weight: bold;
 }
+
+.list-color {
+	background-color:rgb(250, 250, 250)
+}
