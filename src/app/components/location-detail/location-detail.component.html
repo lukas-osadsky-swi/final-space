@@ -7,7 +7,7 @@
                 <li *ngFor="let inhabitant of location.inhabitants">{{inhabitant}}</li>
             </div>
             <div>Notable residents:
-                <li *ngFor="let resident of residents">
+                <li *ngFor="let resident of residents" (click)="toCharacter(resident.id)">
                     <span class="clickable">{{resident.name}}</span>
                 </li>
             </div>

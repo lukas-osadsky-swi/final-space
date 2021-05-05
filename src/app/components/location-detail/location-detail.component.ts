@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Character } from 'src/app/models/character';
 import { Location } from 'src/app/models/location';
 import { ApiService } from 'src/app/services/api.service';
@@ -15,7 +15,8 @@ export class LocationDetailComponent implements OnInit {
 
 	constructor(
 		private readonly dataService: ApiService,
-		private readonly route: ActivatedRoute
+		private readonly route: ActivatedRoute,
+    private readonly router: Router
   ) { }
 
 	ngOnInit() {
@@ -31,5 +32,8 @@ export class LocationDetailComponent implements OnInit {
         })
       });
 		});
+	}
+  public toCharacter(characterId: string):void {
+    this.router.navigate(["/character/" + characterId]);
 	}
 }
