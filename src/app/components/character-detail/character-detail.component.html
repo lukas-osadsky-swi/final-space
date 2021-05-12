@@ -1,0 +1,19 @@
+<div *ngIf="character" class="card card-body m-3">
+    <div class="d-flex justify-content-between">
+        <div>
+            <div class="font-weight-bold">{{character.name}}</div>
+            <div>Status: {{character.status }}</div>
+            <div>Specie: {{character.species }}</div>
+            <div>Gender: {{character.gender }}</div>
+            <div>Hair: {{character.hair }}</div>
+            <div>Origin: {{character.origin }}</div>
+            <div>Aliases:
+                <li *ngFor="let alias of character.alias">{{alias}}</li>
+            </div>
+            <div>Abilities:
+                <li *ngFor="let ability of character.abilities">{{ability}}</li>
+            </div>
+        </div>
+        <img class="image-size"src="{{character.img_url}}">
+    </div>
+</div>
