@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from 'src/app/models/character';
+import { ListDataType } from 'src/app/models/list-data-type';
 import { ApiService } from 'src/app/services/api.service';
-
-enum ListDataType {
-	Character = "character",
-	Episode = "episode",
-	Location = "location"
-}
 
 @Component({
 	selector: 'app-characters',

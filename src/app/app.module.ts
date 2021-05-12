@@ -14,6 +14,7 @@ import { CharacterDetailComponent } from './components/character-detail/characte
 import { EpisodeDetailComponent } from './components/episode-detail/episode-detail.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { LocationDetailComponent } from './components/location-detail/location-detail.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 
 @NgModule({
 	declarations: [
@@ -27,6 +28,7 @@ import { LocationDetailComponent } from './components/location-detail/location-d
 		EpisodeDetailComponent,
 		LocationsComponent,
 		LocationDetailComponent,
+		NavigationBarComponent,
 	],
 	imports: [
 		BrowserModule,

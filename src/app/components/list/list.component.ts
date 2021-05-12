@@ -1,12 +1,8 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ListDataType } from 'src/app/models/list-data-type';
 import { Pager, PaginatorService } from 'src/app/services/paginator.service';
 
-enum ListDataType {
-	Character = "character",
-	Episode = "episode",
-	Location = "location"
-}
 
 @Component({
 	selector: 'app-list',

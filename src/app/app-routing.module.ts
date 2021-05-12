@@ -12,11 +12,11 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 
 const routes: Routes = [
 	{ path: 'home', component: HomeComponent },
-	{ path: 'characters', component: CharactersComponent },
+	{ path: 'character', component: CharactersComponent },
 	{ path: 'character/:id', component: CharacterDetailComponent },
-	{ path: 'episodes', component: EpisodesComponent },
+	{ path: 'episode', component: EpisodesComponent },
 	{ path: 'episode/:id', component: EpisodeDetailComponent },
-	{ path: 'locations', component: LocationsComponent },
+	{ path: 'location', component: LocationsComponent },
 	{ path: 'location/:id', component: LocationDetailComponent },
 
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
